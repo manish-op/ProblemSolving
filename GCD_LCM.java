@@ -7,6 +7,7 @@ public class GCD_LCM {
         System.out.println(LCM(10,100));
         System.out.println(LCM(10,20));
         System.out.println(GCD(10,20));
+        //
     }
 
     static int GCD(int a , int b){
