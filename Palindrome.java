@@ -1,23 +1,21 @@
 package ProblemSolving;
 
-public class Pallindrome {
+public class Palindrome {
 
         public static boolean isPalindrome(int x) {
             int temp=x;
             int rev=0;
 //
             while(x>0){
-                rev = temp%10;
-                x/=10;
+                int digit = x % 10;
+                rev = rev * 10 + digit;
+                x /= 10;
             }
-            if(rev==x)
-                return true;
-            else
-                return false;
+            return rev == temp;
         }
 
     public static void main(String[] args) {
-        isPalindrome(121);
+        System.out.println(isPalindrome(129));
     }
 
 }
